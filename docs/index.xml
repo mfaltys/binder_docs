@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>binder-docs</title>
+    <link>https://unixvoid.github.io/binder_docs/</link>
+    <description>Recent content on binder-docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://unixvoid.github.io/binder_docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Configuring binder</title>
+      <link>https://unixvoid.github.io/binder_docs/configuration/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://unixvoid.github.io/binder_docs/configuration/</guid>
+      <description>Binder uses gcfg (INI-style config files for go structs).
+[binder] port	= 8808 tokensize	= 25 tokendictionary = &amp;quot;0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz&amp;quot; [redis] host	= &amp;quot;localhost:6379&amp;quot; password	= &amp;quot;&amp;quot; [ssl] usetls	= true servercert	= deps/test.crt serverkey	= deps/test.key  The config uses some pretty sane defaults but the following fields are configurable:
+ [binder]
+port: the port the API listens on.
+loglevel: the verbosity of logs, acceptable fields are &amp;lsquo;info&amp;rsquo;, &amp;lsquo;cluster&amp;rsquo;, &amp;lsquo;debug&amp;rsquo;, &amp;lsquo;error&amp;rsquo;.</description>
+    </item>
+    
+    <item>
+      <title>REST API Endpoints</title>
+      <link>https://unixvoid.github.io/binder_docs/api/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://unixvoid.github.io/binder_docs/api/</guid>
+      <description>API Binder exposes an api for uploading, removing, registering, both public files and secrets. The following is the specification for endpoints and their protocols.
+Endpoints Register Instance Registers user with initial key. This enpoint can be used in cases where the biner instance is not bootstrapped.
+ URL
+/register Method
+GET Sample Call
+ curl https://cryo.unixvoid.com/register  Returns
+200 : client sec, an alphanumeric string for authorizing/removing entries
+400 : the instance has already been registered/bootstrapped.</description>
+    </item>
+    
+    <item>
+      <title>Binary storage API with Go</title>
+      <link>https://unixvoid.github.io/binder_docs/</link>
+      <pubDate>Tue, 08 Mar 2016 21:07:13 +0100</pubDate>
+      
+      <guid>https://unixvoid.github.io/binder_docs/</guid>
+      <description>Binder 
+Binder is a project for the storage/retrieval of files. As the name bin dir implies, its main use in my concern is the storage of binaries. I use travis-ci as my main source of continous integration an I wanted to capture the binaries that travis compiles for me. Every time I make a git commit it triggers travis to build the project and travis in turn pushes the statically compiled binaries to binder.</description>
+    </item>
+    
+  </channel>
+</rss>

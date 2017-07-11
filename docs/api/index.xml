@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Apis on binder-docs</title>
+    <link>https://unixvoid.github.io/binder_docs/api/</link>
+    <description>Recent content in Apis on binder-docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Released under the MIT license</copyright>
+    <lastBuildDate>Wed, 09 Mar 2016 00:11:02 +0100</lastBuildDate>
+    
+	<atom:link href="https://unixvoid.github.io/binder_docs/api/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REST API Endpoints</title>
+      <link>https://unixvoid.github.io/binder_docs/api/</link>
+      <pubDate>Wed, 09 Mar 2016 00:11:02 +0100</pubDate>
+      
+      <guid>https://unixvoid.github.io/binder_docs/api/</guid>
+      <description>API Binder exposes an api for uploading, removing, registering, both public files and secrets. The following is the specification for endpoints and their protocols.
+Endpoints Register Instance Registers user with initial key. This enpoint can be used in cases where the biner instance is not bootstrapped.
+ URL
+/register Method
+GET Sample Call
+ curl https://cryo.unixvoid.com/register  Returns
+200 : client sec, an alphanumeric string for authorizing/removing entries
+400 : the instance has already been registered/bootstrapped.</description>
+    </item>
+    
+  </channel>
+</rss>
